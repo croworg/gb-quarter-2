@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
@@ -15,6 +16,7 @@
     <!-- Local styles -->
     <link href="css/index.css" rel="stylesheet">
 </head>
+
 <body>
 <nav class="menu center">
     <div class="menu__box">
@@ -23,12 +25,51 @@
             <a class="link" href="#"><img alt="" src="img/icon/search.svg"></a>
         </div>
         <div class="menu__right">
-            <a class="link" href="#"><img alt="" src="img/icon/burger.svg"></a>
+            <a class="link menu-btn" href="javascript:void(0);" id="menu-btn" onclick="dropDownMenu()">
+                <span></span>
+                <!--                <img alt="" src="img/icon/burger.svg">-->
+            </a>
             <a class="link menu__link_wide" href="#"><img alt="" src="img/icon/registration.svg"></a>
             <a class="link menu__link_wide" href="#"><img alt="" src="img/icon/cart.svg"></a>
         </div>
     </div>
 </nav>
+<div class="dd-menu center">
+    <div class="dd-menu__wrapper">
+        <div class="dd-menu__box" id="dd-menu-box">
+            <h3>MENU</h3>
+            <ul class="dd-menu__root">
+                <li><a class="dd-menu__link" href="#">MAN</a>
+                    <ul class="dd-menu__sub">
+                        <li><a class="dd-menu__link" href="#">Accessories</a></li>
+                        <li><a class="dd-menu__link" href="#">Bags</a></li>
+                        <li><a class="dd-menu__link" href="#">Denim</a></li>
+                        <li><a class="dd-menu__link" href="#">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li><a class="dd-menu__link" href="#">WOMAN</a>
+                    <ul class="dd-menu__sub">
+                        <li><a class="dd-menu__link" href="#">Accessories</a></li>
+                        <li><a class="dd-menu__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="dd-menu__link" href="#">Polos</a></li>
+                        <li><a class="dd-menu__link" href="#">T-Shirts</a></li>
+                        <li><a class="dd-menu__link" href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li><a class="dd-menu__link" href="#">KIDS</a>
+                    <ul class="dd-menu__sub">
+                        <li><a class="dd-menu__link" href="#">Accessories</a></li>
+                        <li><a class="dd-menu__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="dd-menu__link" href="#">Polos</a></li>
+                        <li><a class="dd-menu__link" href="#">T-Shirts</a></li>
+                        <li><a class="dd-menu__link" href="#">Shirts</a></li>
+                        <li><a class="dd-menu__link" href="#">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 <header class="brand">
     <div class="brand__left">
         <img alt="" src="img/misc/brand-man.png">
@@ -217,5 +258,7 @@
         <a class="social__icon" href="https://telegram.org"><i class="fa-solid fa-paper-plane"></i></a>
     </nav>
 </footer>
+<script src="js/script.js"></script>
 </body>
+
 </html>

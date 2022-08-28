@@ -35,6 +35,14 @@ img {
   width: 100%;
 }
 
+ol, ul, ol > li, ul > li {
+  list-style: none;
+}
+
+.link {
+  padding: 10px;
+}
+
 .tac {
   text-align: center;
 }
