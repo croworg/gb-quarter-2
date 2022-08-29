@@ -1,29 +1,6 @@
 @import "common";
+@import "header";
 
-.menu {
-  height: 75px;
-  background-color: $menu-bg;
-
-  &__box {
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__left {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: center;
-  }
-
-  &__right {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    align-items: center;
-  }
-}
 
 .brand {
   display: flex;
@@ -229,6 +206,20 @@
 
 @import "footer";
 
+/* Dropdown menu break query */
+@media screen and (max-width: 1604px) {
+  .dd-menu {
+    position: relative;
+
+    &__wrapper {
+      position: unset;
+    }
+
+    &__box {
+      right: 0;
+    }
+  }
+}
 
 /* Laptop (1172px - 768px) */
 @media screen and (max-width: 1171.9px) {
