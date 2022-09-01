@@ -25,6 +25,7 @@ ol, ul, ol > li, ul > li {
 }
 
 .link {
+  display: block;
   padding: 10px;
 }
 
@@ -333,6 +334,10 @@ ol, ul, ol > li, ul > li {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.trend__link {
+  display: block;
+  height: 100%;
 }
 .trend__desc {
   position: absolute;
